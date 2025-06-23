@@ -60,16 +60,42 @@
 
     <div class="container mt-5" style="color: #fff; font-size: 1.1rem;">
       <h1 class="text-center mb-4">This Website</h1>
-      <p class="text-center">This website is built using Flask and Bootstrap deployed in AWS using AWS CDK. It showcases various features and functionalities.</p>
-    <div class="d-flex align-items-start mt-4">
+      <p class="text-left">This website is built using Flask and Bootstrap deployed in AWS using AWS CDK. It showcases various features and functionalities provided by AWS.</p>
+      <p class="text-left">I put the code base in Git for source control.  You can view the code that runs this site using the link below. 
+        I added references to all the AWS resource creation in my stack for quick review.
+      </p>
+      <p class="text-center">Gitlab Repo-      
+        <a href="https://github.com/lucas-gutknecht/portfolio/" target="_blank">Repository Link</a>
+      </p>
+        <div class="d-flex align-items-start mt-4">
       <img src="{{ url_for('static', filename='images/cloudformation.jpg') }}" alt="CloudFormation" class="cloudformation-image" />
       <ul class="mb-0 fancy-bullets" style="color: #fff; font-size: 1.1rem;">
         <li>Route53</li>
+          <div class="reference">
+            <a href="https://github.com/lucas-gutknecht/portfolio/blob/main/portfolio/resources.py#L71" target="_blank">Reference Link</a>
+          </div>
         <li>Lambda</li>
+          <div class="reference">
+            <a href="https://github.com/lucas-gutknecht/portfolio/blob/main/portfolio/resources.py#L38" target="_blank">Reference Link</a>
+          </div>
         <li>Iam</li>
-        <li>ApiGateway</li>
-        <li>LambdaLayer</li>
+          <div class="reference">
+            <a href="https://github.com/lucas-gutknecht/portfolio/blob/main/portfolio/iam.py" target="_blank">Reference Link</a>
+          </div>
+        <li>Api Gateway</li>
+          <div class="reference">
+            <a href="https://github.com/lucas-gutknecht/portfolio/blob/main/portfolio/resources.py#L18" target="_blank">Reference Link</a>
+          </div>
+        <li>Lambda Layer</li>
+          <div class="reference">
+            <a href="https://github.com/lucas-gutknecht/portfolio/blob/main/portfolio/resources.py#L29" target="_blank">Reference Link</a>
+          </div>
       </ul>
     </div>
+    <footer class="footer mt-auto py-3">
+      <div class="container text-end">
+        <span class="footer-text">Contact me! <a href="mailto:lucas.gutknecht@gmail.com">lucas.gutknecht@gmail.com</a></span>
+      </div>
+    </footer>
   </body>
 </html>
