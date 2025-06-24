@@ -15,7 +15,11 @@
 
 .navbar .navbar-nav .nav-link,
 .navbar .navbar-brand {
-    color: #1167c4 !important;
+    color: white !important;
+}
+
+.navbar{
+    background: linear-gradient(90deg, #7b83f1, #5c66f3);
 }
 
 body {
@@ -151,7 +155,7 @@ body {
 }
 
 .skills-section {
-    color: rgb(25, 5, 135);
+    color:darkblue;
     width: 100%;
     max-width: none;
     margin-top: 0;
@@ -204,7 +208,7 @@ body {
 
 .skills-title {
     font-size: 2.5em;
-    color: rgb(25, 5, 135);
+    color: black
     /* Highlight color for your name */
 }
 
@@ -218,20 +222,21 @@ body {
 }
 
 #about {
-    background: linear-gradient(90deg, #f4f4f4, #2d3af0);
+
+    background: linear-gradient(90deg, #acb0e8, #949bf5);
     /* Example: deep blue */
-    padding: 0px 0;
+    padding: 10px 0;
 }
 
 #skills {
-    background: linear-gradient(90deg, #f4f4f4, #007bff);
+    background: linear-gradient(90deg, #949bf5, #7b83f1);
     /* background: #1565c0; */
     /* Example: lighter blue */
     padding: 60px 0;
 }
 
 #resume {
-    background: linear-gradient(90deg, #f4f4f4, #283593);
+    background: linear-gradient(90deg, #7b83f1, #5c66f3);
     /* Example: another blue shade */
     padding: 60px 0;
 }
@@ -277,22 +282,35 @@ body {
 }
 
 .fancy-bullets li {
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 6px;
-  cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .fancy-bullets li:hover {
-  font-size: 1.2rem;
-  background: #f0f8ff;
-  color: #0074d9;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 1.2rem;
+    background: #f0f8ff;
+    color: #0074d9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .reference {
-  margin-left: 2em; /* Increase this value for more indentation */
-  font-size: 0.7em;
-  color: #555;
+    margin-left: 2em;
+    /* Increase this value for more indentation */
+    font-size: 0.7em;
+    color: #555;
+}
+
+.reference a {
+  color: #f4ec09; /* or any color you prefer */
+  text-decoration: underline;
+}
+
+.btn.btn-primary,
+.btn-primary {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
 }
