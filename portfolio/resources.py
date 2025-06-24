@@ -49,7 +49,7 @@ def create_app(scope: Construct, id: str, configuration: any, lambda_role):
         memory_size=2048,
         layers=[portfolio_lambda_layer],
         environment={
-            "test": "test",
+            "GMAIL_APP_PASSWORD": "update_in_console",
         },
         # vpc=my_vpc,
         # security_groups=[my_security_group],
